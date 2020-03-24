@@ -1,0 +1,109 @@
+*{
+    font-family: 'Noto Sans', sans-serif;
+}
+body{
+    background-image: url(./Assets/clouds.jpg);
+}
+
+img{
+    margin-bottom: 15px;
+    height: 40px;
+    width: 40px;
+}
+
+footer{
+    position: absolute;
+    background-color: #2a7886;
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+}
+
+.wrapper{
+    height: 600px;
+    width: 1250px;
+    margin: 50px auto;
+}
+
+
+.title{
+    text-align: center;
+    color: #f1f3f4;
+    background-color: #2a7886;
+    padding-top: 7px;
+    height: 60px;
+}
+
+.search-section{
+    background-color: #79bac1;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+.city-history{
+    margin-top: 5px;
+    height: 85%;
+}
+
+.main-dashboard-section{
+    height: 325px;
+    position: relative;
+}
+
+.rm-button{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.position{
+    position:relative;
+}
+.forecast-dashboard-section{
+    height: 275px;
+}
+
+.forecast-subheading{
+    margin-left: 12px;
+}
+
+.card{
+    width: 165px;
+    height: 85%;
+    display: inline-block;
+    margin-left: 12px;
+    padding: 20px;
+    background-color: #79bac1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.city-button{
+    background-color: #512b58;
+    color: #f1f3f4;
+}
+
+#main-dashboard-content{
+    background-color: #79bac1;
+    padding: 10px;
+    padding-left: 20px;
+    height: 300px;
+    width: 100%;
+    margin: 0 auto;
+
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media (min-width: 576px){
+
+    .form-inline .form-control {
+        display: inline-block;
+        width: 65%;
+        vertical-align: middle;
+    }
+}
