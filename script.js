@@ -295,7 +295,7 @@ function startUp(){
     var cityHistoryInStorage = JSON.parse(localStorage.getItem("cityHistory"))
 
 
-    if(cityHistoryInStorage != 0){
+    if(cityHistoryInStorage != null){
 
         cityHistory = cityHistoryInStorage
         renderCityHistory()
