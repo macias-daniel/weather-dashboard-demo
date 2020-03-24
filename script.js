@@ -49,7 +49,6 @@ function apiDataCall(userChoice){
         var latitiude = ""
     
         var mainQueryUrl = "http://api.openweathermap.org/data/2.5/weather?q="+ userChoice +"&appid=" + apikey
-        var uvQueryUrl = "http://api.openweathermap.org/data/2.5/uvi/forecast?appid=" + apikey + "&lat=" + latitiude + "&lon=" + longitutde
     
         //Location Current Information
         var cityName = ""
@@ -69,7 +68,7 @@ function apiDataCall(userChoice){
             //Uv index ajax call info
             longitutde = result.coord.lon
             latitiude = result.coord.lat  
-            uvQueryUrl = "http://api.openweathermap.org/data/2.5/uvi/forecast?appid=" + apikey + "&lat=" + latitiude + "&lon=" + longitutde
+            var uvQueryUrl = "http://api.openweathermap.org/data/2.5/uvi/forecast?appid=" + apikey + "&lat=" + latitiude + "&lon=" + longitutde;
             
             cityName = result.name 
             
@@ -87,7 +86,7 @@ function apiDataCall(userChoice){
 
                 uvIndex = "UV Index: " + result[0].value
 
-                var forecastUrl = "https://cors-anywhere.herokuapp.com/api.openweathermap.org/data/2.5/forecast?q="+ cityName +"&appid=" + apikey
+                var forecastUrl = "https://cors-anywhere.herokuapp.com/api.openweathermap.org/data/2.5/forecast?q="+ cityName +"&appid=" + apikey;
 
                 //Setting nextDayComparision 
                 var currentDay = currentDate.slice(8,10)
