@@ -247,7 +247,10 @@ function createButton(name){
 //Display City history buttons
 function renderCityHistory(){
     $("#city-history").empty()
-    // Clear todoList element and update todoCountSpan
+    // Clear todoList element and update cityhistory
+    if(cityHistory === null){
+        cityHistory = [""]
+    }
     for(var i = 0; i < cityHistory.length;i++){
         createButton(cityHistory[i])
     }
